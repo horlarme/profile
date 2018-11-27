@@ -20,6 +20,14 @@
         <item name="android:textColorLink">@color/colorWhite</item>
     </style>
 
+    <style name="AppTheme.Text.Black">
+        <item name="android:backgroundTint">@color/colorText</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:color">@color/colorText</item>
+        <item name="android:textColorLink">@color/colorText</item>
+    </style>
+
     <style name="AppTheme.Button" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
