@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="facebook">Facebook</string>
+    <string name="shared_preference_is_first_start">is_first_start</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="e_mail_address">E-Mail Address</string>
+    <string name="motto">Your resume on your hand…</string>
+    <string name="start">Start</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="registration_agree">By checking this box, I agree to the terms and conditions of using this website.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="already_have_account">Already a user? Sign In</string>
+    <string name="registration">Registration</string>
+    <string name="full_name">Full Name</string>
+    <string name="request_password">Request Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="backup">BackUp</string>
+</resources>
