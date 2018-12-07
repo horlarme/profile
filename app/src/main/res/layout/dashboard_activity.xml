@@ -78,7 +78,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/pageViewHighlight"
+                            android:id="@+id/pageInvitesHighlight"
                             style="@style/AppTheme.Text.CardHighlight"
                             android:text="2522" />
 
