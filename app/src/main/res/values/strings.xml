@@ -20,4 +20,10 @@
     <string name="request_password">Request Password</string>
     <string name="dashboard">Dashboard</string>
     <string name="backup">BackUp</string>
+    <string name="profile_analytics">Profile Analytics</string>
+    <string name="messages">Messages</string>
+    <string name="synchronize">Synchronize</string>
+    <string name="page_views">Page Views</string>
+    <string name="likes">Likes</string>
+    <string name="invites">Invites</string>
 </resources>

@@ -103,13 +103,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/forget_password"
-                    android:onClick="goToForgetPasswordActivity"
-                    android:textColor="@color/colorWhite" />
+                    android:onClick="goToForgetPasswordActivity" />
 
-                <android.support.design.button.MaterialButton
+                <TextView
                     android:id="@+id/registerButton"
-                    style="@style/AppTheme.Button"
-                    android:layout_marginTop="0dp"
+                    style="@style/AppTheme.Text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:onClick="goToRegisterActivity"
                     android:text="@string/register" />
             </android.support.v7.widget.LinearLayoutCompat>
