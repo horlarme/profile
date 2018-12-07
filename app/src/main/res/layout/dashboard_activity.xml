@@ -91,6 +91,7 @@
                             android:textAlignment="center" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+
             </LinearLayout>
 
             <LinearLayout
@@ -102,17 +103,17 @@
                     style="@style/AppTheme.Text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="95"
                     android:text="@string/profile_comments"
+                    android:layout_weight="95"
                     android:textSize="20sp" />
 
                 <android.support.design.button.MaterialButton
+                    android:onClick="openComments"
                     style="@style/AppTheme.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="0dp"
-                    android:onClick="openComments"
                     android:text="@string/view_all" />
             </LinearLayout>
 
