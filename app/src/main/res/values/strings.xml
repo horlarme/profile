@@ -26,4 +26,6 @@
     <string name="page_views">Page Views</string>
     <string name="likes">Likes</string>
     <string name="invites">Invites</string>
+    <string name="profile_comments">Profile Comments</string>
+    <string name="view_all">View All</string>
 </resources>

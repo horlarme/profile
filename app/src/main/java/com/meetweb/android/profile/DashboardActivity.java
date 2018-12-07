@@ -34,4 +34,8 @@ public class DashboardActivity
     public void onClick(View v) {
         Toast.makeText(getApplicationContext(), v.toString(), Toast.LENGTH_LONG).show();
     }
+
+    public void openComments(View view) {
+        Toast.makeText(this, "This will be opening comments activity in future", Toast.LENGTH_LONG).show();
+    }
 }
