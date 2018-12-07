@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void proceed(View view)
     {
         startActivity(new Intent(this, LogInActivity.class));
+        finish();
     }
 
     @Override

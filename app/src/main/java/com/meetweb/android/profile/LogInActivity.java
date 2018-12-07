@@ -24,5 +24,6 @@ public class LogInActivity extends AppCompatActivity {
 
     public void proceed(View view) {
         startActivity(new Intent(this, DashboardActivity.class));
+        finish();
     }
 }
