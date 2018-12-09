@@ -5,5 +5,10 @@
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_backup_white_24dp"
             android:title="@string/page_views" />
+        <item
+            android:id="@+id/exitButton"
+            android:icon="@drawable/ic_exit_to_app_white_24dp"
+            android:title="@string/exit"
+            />
     </group>
 </menu>

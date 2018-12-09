@@ -20,6 +20,7 @@ public class DashboardActivity
 
     Toolbar toolbar;
     DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,11 +35,23 @@ public class DashboardActivity
         toolbar.setOnMenuItemClickListener(this);
 
         drawerLayout = findViewById(R.id.drawerLayout);
+        navigationView = findViewById(R.id.drawer_navigation);
+        navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        Toast.makeText(this, menuItem.getTitle(), Toast.LENGTH_LONG).show();
+        // set item as selected to persist highlight
+        menuItem.setChecked(true);
+        // close drawer when item is tapped
+        drawerLayout.closeDrawers();
+
+        switch (menuItem.getItemId()) {
+            case R.id.exitButton:
+                finish();
+                break;
+        }
         return false;
     }
 
