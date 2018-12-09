@@ -21,12 +21,18 @@
     <string name="dashboard">Dashboard</string>
     <string name="backup">BackUp</string>
     <string name="profile_analytics">Profile Analytics</string>
+    <string name="analytics">Analytics</string>
     <string name="messages">Messages</string>
     <string name="synchronize">Synchronize</string>
     <string name="page_views">Page Views</string>
     <string name="likes">Likes</string>
     <string name="invites">Invites</string>
     <string name="profile_comments">Profile Comments</string>
+    <string name="comments">Comments</string>
     <string name="view_all">View All</string>
+    <string name="view">View</string>
     <string name="exit">Exit</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
 </resources>
