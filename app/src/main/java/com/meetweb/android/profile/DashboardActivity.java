@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +23,7 @@ public class DashboardActivity
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    FragmentManager fragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +41,7 @@ public class DashboardActivity
         navigationView = findViewById(R.id.drawer_navigation);
         navigationView.setNavigationItemSelectedListener(this);
 
+        fragment = getSupportFragmentManager();
     }
 
     @Override
@@ -48,8 +52,7 @@ public class DashboardActivity
         drawerLayout.closeDrawers();
 
         switch (menuItem.getItemId()) {
-            case R.id.exitButton:
-                finish();
+            default:
                 break;
         }
         return false;
