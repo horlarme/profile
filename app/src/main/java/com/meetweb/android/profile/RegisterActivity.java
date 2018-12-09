@@ -14,6 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void goBackToLogin(View view) {
+        startActivity(new Intent(this, LogInActivity.class));
         finish();
     }
 

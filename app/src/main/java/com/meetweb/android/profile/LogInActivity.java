@@ -16,10 +16,12 @@ public class LogInActivity extends AppCompatActivity {
 
     public void goToRegisterActivity(View view) {
         startActivity(new Intent(this, RegisterActivity.class));
+        finish();
     }
 
     public void goToForgetPasswordActivity(View view) {
         startActivity(new Intent(this, ForgetPasswordActivity.class));
+        finish();
     }
 
     public void proceed(View view) {
