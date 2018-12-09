@@ -1,13 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/appBarMessageButton"
-        android:title="@string/messages"
-        android:icon="@drawable/ic_message_black_24dp"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/back_up_button"
-        android:title="@string/synchronize"
-        android:icon="@drawable/ic_sync_black_24dp"
+        android:id="@+id/exploreButton"
+        android:title="@string/explore"
+        android:icon="@drawable/ic_explore_white_24dp"
         app:showAsAction="always" />
 </menu>
