@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="top"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     android:orientation="vertical">
 
     <TextView
-        style="@style/AppTheme.Text"
+        style="@style/AppTheme.Text.Black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/profile_analytics"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimaryDark"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -36,7 +36,7 @@
                     android:text="245" />
 
                 <TextView
-                    style="@style/AppTheme.Text.Black"
+                    style="@style/AppTheme.Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/page_views"
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimaryDark"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -62,7 +62,7 @@
                     android:text="2522" />
 
                 <TextView
-                    style="@style/AppTheme.Text.Black"
+                    style="@style/AppTheme.Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/invites"
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimaryDark"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -88,7 +88,7 @@
                     android:text="2522" />
 
                 <TextView
-                    style="@style/AppTheme.Text.Black"
+                    style="@style/AppTheme.Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/likes"
@@ -103,12 +103,13 @@
         android:weightSum="100">
 
         <TextView
-            style="@style/AppTheme.Text"
+            style="@style/AppTheme.Text.Black"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="95"
+            android:gravity="center_vertical"
             android:text="@string/profile_comments"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <android.support.design.button.MaterialButton
             android:id="@+id/openCommentButton"
@@ -120,68 +121,66 @@
             android:text="@string/view_all" />
     </LinearLayout>
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="15dp">
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp"
+            android:maxHeight="80dp"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_menu_black_24dp" />
+        </android.support.v7.widget.CardView>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxHeight="80dp"
             android:orientation="vertical">
 
             <TextView
-                style="@style/AppTheme.Text"
+                style="@style/AppTheme.Text.Black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/likes" />
+                android:layout_margin="0dp"
+                android:padding="5dp"
+                android:text="@string/hide_bottom_view_on_scroll_behavior" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:weightSum="100">
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/app_name"
-                    android:maxHeight="80dp"
-                    android:src="@drawable/ic_dashboard_white_24dp" />
-
-                <LinearLayout
+                <TextView
+                    style="@style/AppTheme.Text.Black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="80"
-                    android:maxHeight="80dp"
-                    android:orientation="vertical">
+                    android:layout_margin="0dp"
+                    android:padding="8dp"
+                    android:text="@string/app_name"
+                    android:textSize="12sp" />
 
-                    <TextView
-                        style="@style/AppTheme.Text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="0dp"
-                        android:padding="5dp"
-                        android:text="@string/app_name"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/AppTheme.Text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="0dp"
-                        android:padding="5dp"
-                        android:textSize="12sp"
-                        android:text="@string/sample_time" />
-                </LinearLayout>
+                <TextView
+                    style="@style/AppTheme.Text.Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="8dp"
+                    android:text="@string/sample_date_time"
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </LinearLayout>
 
 </android.support.v7.widget.LinearLayoutCompat>

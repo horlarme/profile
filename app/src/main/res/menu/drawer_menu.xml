@@ -30,5 +30,9 @@
             android:id="@+id/openComments"
             android:icon="@drawable/ic_message_black_24dp"
             android:title="@string/comments" />
+        <item
+            android:id="@+id/openSettings"
+            android:icon="@drawable/ic_settings_applications_white_24dp"
+            android:title="@string/settings" />
     </group>
 </menu>

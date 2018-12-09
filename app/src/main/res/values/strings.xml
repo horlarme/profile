@@ -35,6 +35,8 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="profile">Profile</string>
     <string name="settings">Settings</string>
-    <string name="sample_time">Sunday 9, Dec 2018 2:33PM</string>
+    <string name="sample_full_date_time">Sunday 9, Dec 2018 2:33PM</string>
+    <string name="sample_date_time">9/12/2018 2:33PM</string>
+    <string name="sample_time">2:33PM</string>
     <string name="explore">Explore</string>
 </resources>

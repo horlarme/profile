@@ -8,7 +8,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorWhite">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_main"
@@ -27,9 +27,8 @@
             app:layout_constraintTop_toBottomOf="@id/toolbar_main">
 
             <!--The User interactable view-->
-            <fragment
+            <FrameLayout
                 android:id="@+id/mainFragmentContainer"
-                android:name="com.meetweb.android.profile.Fragment.DashboardFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </ScrollView>
