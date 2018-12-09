@@ -52,8 +52,4 @@ public class DashboardActivity
     public void onClick(View v) {
         drawerLayout.openDrawer(GravityCompat.START);
     }
-
-    public void openComments(View view) {
-        Toast.makeText(this, "This will be opening comments activity in future", Toast.LENGTH_LONG).show();
-    }
 }
