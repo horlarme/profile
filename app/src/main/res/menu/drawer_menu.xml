@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/openDashboard"
@@ -10,6 +10,10 @@
             android:id="@+id/openProfile"
             android:icon="@drawable/ic_edit_white_24dp"
             android:title="@string/profile" />
+        <item
+            android:id="@+id/openMessage"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/messages" />
         <item
             android:id="@+id/openAnalytics"
             android:icon="@drawable/ic_show_chart_white_24dp"
@@ -22,5 +26,9 @@
             android:id="@+id/openLikes"
             android:icon="@drawable/ic_likes_white_24dp"
             android:title="@string/likes" />
+        <item
+            android:id="@+id/openComments"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/comments" />
     </group>
 </menu>

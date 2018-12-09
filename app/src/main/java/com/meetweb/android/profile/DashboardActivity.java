@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DashboardActivity
@@ -23,7 +24,9 @@ public class DashboardActivity
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    View navigationViewHeader;
     FragmentManager fragment;
+    TextView title;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,8 +43,23 @@ public class DashboardActivity
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.drawer_navigation);
         navigationView.setNavigationItemSelectedListener(this);
+        //Using this method in other to get the view of the header for the drawer
+        navigationViewHeader = navigationView.inflateHeaderView(R.layout.drawer_menu_header);
+
+        title = navigationViewHeader.findViewById(R.id.drawer_user_name);
+
+        changeDrawerProfileName("Lawal Oladipupo");
 
         fragment = getSupportFragmentManager();
+    }
+
+    /**
+     * Set the text on the drawer header.
+     *
+     * @param userName The name to change the text shown in the drawer header to
+     */
+    public void changeDrawerProfileName(String userName) {
+        title.setText(userName);
     }
 
     @Override
