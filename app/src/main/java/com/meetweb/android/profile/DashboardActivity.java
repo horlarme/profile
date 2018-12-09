@@ -1,7 +1,11 @@
 package com.meetweb.android.profile;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -10,18 +14,32 @@ import android.widget.Toast;
 
 public class DashboardActivity
         extends AppCompatActivity
-        implements View.OnClickListener, Toolbar.OnMenuItemClickListener {
+        implements View.OnClickListener,
+        NavigationView.OnNavigationItemSelectedListener,
+        Toolbar.OnMenuItemClickListener {
+
+    Toolbar toolbar;
+    DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
 
         //Picking toolbar from the view
-        Toolbar toolbar = findViewById(R.id.toolbar_main);
+        toolbar = findViewById(R.id.toolbar_main);
         //Setting its values
         toolbar.setNavigationOnClickListener(this);
         toolbar.inflateMenu(R.menu.main);
         toolbar.setOnMenuItemClickListener(this);
+
+        drawerLayout = findViewById(R.id.drawerLayout);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        Toast.makeText(this, menuItem.getTitle(), Toast.LENGTH_LONG).show();
+        return false;
     }
 
     @Override
@@ -32,7 +50,7 @@ public class DashboardActivity
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(getApplicationContext(), v.toString(), Toast.LENGTH_LONG).show();
+        drawerLayout.openDrawer(GravityCompat.START);
     }
 
     public void openComments(View view) {
