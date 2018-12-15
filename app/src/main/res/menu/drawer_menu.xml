@@ -19,17 +19,9 @@
             android:icon="@drawable/ic_show_chart_white_24dp"
             android:title="@string/analytics" />
         <item
-            android:id="@+id/openInvites"
-            android:icon="@drawable/ic_invite_white_24dp"
-            android:title="@string/invites" />
-        <item
-            android:id="@+id/openLikes"
-            android:icon="@drawable/ic_likes_white_24dp"
-            android:title="@string/likes" />
-        <item
-            android:id="@+id/openComments"
+            android:id="@+id/openReviews"
             android:icon="@drawable/ic_message_black_24dp"
-            android:title="@string/comments" />
+            android:title="@string/reviews" />
         <item
             android:id="@+id/openSettings"
             android:icon="@drawable/ic_settings_applications_white_24dp"
