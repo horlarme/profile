@@ -14,10 +14,10 @@
             android:id="@+id/openMessage"
             android:icon="@drawable/ic_message_black_24dp"
             android:title="@string/messages" />
-        <item
-            android:id="@+id/openAnalytics"
-            android:icon="@drawable/ic_show_chart_white_24dp"
-            android:title="@string/analytics" />
+        <!--<item-->
+            <!--android:id="@+id/openAnalytics"-->
+            <!--android:icon="@drawable/ic_show_chart_white_24dp"-->
+            <!--android:title="@string/analytics" />-->
         <item
             android:id="@+id/openReviews"
             android:icon="@drawable/ic_message_black_24dp"
