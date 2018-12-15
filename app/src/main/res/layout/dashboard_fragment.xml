@@ -83,7 +83,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/pageLikesHighlight"
+                    android:id="@+id/pageReviewsHighlight"
                     style="@style/AppTheme.Text.CardHighlight"
                     android:text="2522" />
 
@@ -91,7 +91,7 @@
                     style="@style/AppTheme.Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/likes"
+                    android:text="@string/reviews"
                     android:textAlignment="center" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
