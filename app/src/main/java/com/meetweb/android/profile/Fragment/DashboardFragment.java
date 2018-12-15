@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.meetweb.android.profile.DashboardActivity;
 import com.meetweb.android.profile.R;
 
 public class DashboardFragment extends Fragment implements View.OnClickListener {
@@ -38,5 +39,11 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 openComments(v);
                 break;
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((DashboardActivity) getActivity()).setAppBarTitle("Dashboard");
     }
 }

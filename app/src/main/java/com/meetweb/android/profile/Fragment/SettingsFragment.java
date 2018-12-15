@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.meetweb.android.profile.DashboardActivity;
 import com.meetweb.android.profile.R;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
@@ -23,5 +24,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((DashboardActivity) getActivity()).setAppBarTitle("Settings");
     }
 }
